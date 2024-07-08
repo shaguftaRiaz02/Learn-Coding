@@ -1,0 +1,42 @@
+/* Style for the detail box */
+.detail-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for the heading container */
+  .heading_container {
+    text-align: center;
+  }
+  
+  /* Style for the heading */
+  .heading_container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the paragraph */
+  .detail-box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Style for the "Read More" link */
+  /* Style for the "Read More" link */
+.detail-box a {
+    display: inline-block;
+    margin: 10px auto; /* Center align horizontally */
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .detail-box a:hover {
+    background-color: #0056b3;
+  }
+  

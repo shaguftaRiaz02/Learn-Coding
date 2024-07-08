@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    
+    <style>
+      /* Custom CSS for hover effect */
+      .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.201);
+      }
+      .dropdown-item:hover{
+        background-color: rgba(0, 0, 255, 0.696);
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Learn Coding</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about-us.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Courses
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li><a class="dropdown-item" href="#">SEO</a></li>
+                <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
+
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Support Us</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 bg-primary-subtle"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success text-white" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+     <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/image1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/image2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/img3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Header  -->
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+      <svg
+        class="bi mt-4 mb-3"
+        style="color: var(--bs-indigo)"
+        width="100"
+        height="100"
+      >
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+      <h1 class="text-body-emphasis">Unlocking the Power of Learning</h1>
+      <h4 class="text-body-emphasis">(Your Path to Knowledge and Growth)</h4>
+      <p class="col-lg-8 mx-auto fs-5 text-muted">
+        Welcome to our website, where learning knows no bounds! We are
+        passionate about unlocking the power of knowledge and fostering personal
+        growth. Whether you're a seasoned learner or just starting your journey,
+        our platform offers a diverse range of courses and resources to suit
+        your interests and goals. Our mission is to provide a seamless and
+        enjoyable learning experience that empowers you to acquire new skills
+        and expand your horizons. Join our thriving community of learners and
+        embark on a path of continuous discovery. Let's embrace the joy of
+        learning together and unlock your true potential. Start your educational
+        journey with us today!
+      </p>
+      <div class="d-inline-flex gap-2 mb-5">
+        
+        <!-- Button -->
+        <button
+          class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill"
+          type="button"
+        >
+          Start Learning Now
+          <svg class="bi ms-2" width="24" height="24">
+            <use xlink:href="#arrow-right-short"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- Footer -->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Courses</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2023 Copyrights, All rights are reserved</p>
+    </footer>
+  </div>
+</html>
